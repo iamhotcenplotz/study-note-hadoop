@@ -1,5 +1,5 @@
 venv
 .idea
 main.py
-/HadoopPython/secret.py
+./HadoopPython/secret.py
 __pycache__
