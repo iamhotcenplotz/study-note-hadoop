@@ -39,3 +39,7 @@ client.download(hdfs_path='/ods_news/ods_news_east.txt', local_path='./', n_thre
 
 # check hdfs folders
 client.list(hdfs_path='/')
+
+# Delete
+client.delete(hdfs_path='/test_api2', recursive=True)
+
