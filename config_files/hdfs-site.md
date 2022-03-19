@@ -31,7 +31,7 @@
                 <name>dfs.namenode.secondary.http-address</name>
                 <value>server3:9868</value>
         </property>
-            <!-- -->
+        <!-- -->
         <property>
                 <name>dfs.permissions</name>
                 <value>false</value>
