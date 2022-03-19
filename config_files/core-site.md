@@ -34,6 +34,16 @@
                 <name>hadoop.http.staticuser.user</name>
                 <value>hadoop</value>
         </property>
+        <!-- -->
+        <property>
+                <name>hadoop.proxyuser.hadoop.hosts</name>
+                <value>server1</value>
+        </property>
+        <!-- -->
+        <property>
+                <name>hadoop.proxyuser.hadoop.groups</name>
+                <value>*</value>
+        </property>
 </configuration>
 
 ```
