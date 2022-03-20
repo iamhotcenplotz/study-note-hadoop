@@ -43,3 +43,5 @@ client.list(hdfs_path='/')
 # Delete
 client.delete(hdfs_path='/test_api2', recursive=True)
 
+# Check folder components
+print(client.list('/',status=True))
