@@ -29,19 +29,19 @@ config = {
 
 client = hdfs.InsecureClient(**config)
 # Make folder
-client.makedirs('/test_api2')
+# client.makedirs('/test_api2')
 
 # upload file
-client.upload(hdfs_path='/test_api2/', local_path='./Hadoop_API.md', n_threads=1)
+# client.upload(hdfs_path='/test_api2/', local_path='./Hadoop_API.md', n_threads=1)
 
 # download file
 client.download(hdfs_path='/ods_news/ods_news_east.txt', local_path='./', n_threads=3)
 
 # check hdfs folders
-client.list(hdfs_path='/')
+# client.list(hdfs_path='/')
 
 # Delete
-client.delete(hdfs_path='/test_api2', recursive=True)
+# client.delete(hdfs_path='/test_api2', recursive=True)
 
 # Check folder components
-print(client.list('/',status=True))
+# print(client.list('/',status=True))

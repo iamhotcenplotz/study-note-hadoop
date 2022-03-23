@@ -5,5 +5,11 @@
 hdfs --daemon start httpfs
 ```
 
+- Python Module
+  - HDFS: hdfs
+  - MapReduce: mrjob
+    - Don't spend too much energy on this... 
+    - Because we will use spark / flink
+
 
 
