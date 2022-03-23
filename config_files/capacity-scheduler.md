@@ -1,4 +1,8 @@
 # Capacity Scheduler Configuration
+- capacity queue
+  - default
+  - spark
+  - flink
 ```xml
 <configuration>
 
