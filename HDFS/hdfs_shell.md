@@ -37,3 +37,7 @@
     hadoop fs -du -h ## file size
     hadoop fs -setrep <file name> ## set replication; max replication size equal to number of server.
     ```
+  - balancer
+    ```shell
+    sbin/start-balancer.sh -threshold 5
+    ```

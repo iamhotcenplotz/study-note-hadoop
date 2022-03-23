@@ -39,7 +39,12 @@
         <!-- -->
         <property>
                 <name>dfs.replication</name>
-                <value>2</value>
+                <value>3</value>
+        </property>
+    
+        <property>
+                <name>dfs.namenode.handler.count</name>
+                <value>27</value>
         </property>
 </configuration>
 ```

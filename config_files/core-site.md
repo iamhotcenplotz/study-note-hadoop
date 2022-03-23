@@ -44,6 +44,16 @@
                 <name>hadoop.proxyuser.hadoop.groups</name>
                 <value>*</value>
         </property>
+    
+        <property>
+                <name>fs.trash.interval</name>
+                <value>360</value>
+        </property>
+    
+        <property>
+                <name>fs.trash.checkpoint.interval</name>
+                <value>60</value>
+        </property>
 </configuration>
 
 ```
