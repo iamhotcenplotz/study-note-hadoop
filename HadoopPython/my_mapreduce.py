@@ -16,6 +16,10 @@ class JiebaMapReduce(MRJob):
 if __name__ == '__main__':
     JiebaMapReduce.run()
 
-# python my_mapreduce.py ./ods_news_east.txt
-# python my_mapreduce.py -r local ./ods_news_east.txt ./tmp
-# python my_mapreduce.py -r hadoop hdfs:///ods_news/ods_news_east.txt  --output hdfs:///temp_result
+
+"""
+run mapreduce program using one of following commands:
+    - inline:python my_mapreduce.py ./ods_news_east.txt
+    - local: python my_mapreduce.py -r local ./ods_news_east.txt ./tmp
+    - hadoop cluster: python my_mapreduce.py -r hadoop hdfs:///ods_news/ods_news_east.txt  --output hdfs:///temp_result
+"""
