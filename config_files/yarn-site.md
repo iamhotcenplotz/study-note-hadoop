@@ -48,6 +48,73 @@
                 <name>yarn.log-aggregation.retain-seconds</name>
                 <value>604800</value>
         </property>
+    
+        <!-- new for server -->
+        <property>
+                <name>yarn.resourcemanager.scheduler.class</name>
+                <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value>
+        </property>
+        <property>
+                <!-- 1-2 *1 + (2*4)*3 ~ 14 Threads ~~ 5 -->
+                <name>yarn.resourcemanager.scheduler.client.thread-count</name>
+                <value>5</value>
+        </property>
+    
+        <property>
+                <name>yarn.nodemanager.resource.detect-hardware-capabilities</name>
+                <value>false</value>
+        </property>
+        
+        <property>
+                <name>yarn.nodemanager.resource.count-logical-processors-as-cores</name>
+                <value>true</value>
+        </property>
+        
+        <property>
+                <name>yarn.nodemanager.resource.pcores-vcores-multiplier</name>
+                <value>2.0</value>
+        </property>
+    
+        <property>
+                <name>yarn.nodemanager.resource.memory-mb</name>
+                <value>4096</value>
+        </property>
+    
+        <property>
+                <name>yarn.nodemanager.resource.cpu-vcores</name>
+                <value>2</value>
+        </property>
+    
+        <property>
+                <name>yarn.scheduler.minimum-allocation-mb</name>
+                <value>1024</value>
+        </property>
+    
+        <property>
+                <name>yarn.scheduler.maximum-allocation-mb</name>
+                <value>3072</value>
+        </property>
+    
+        <property>
+                <name>yarn.scheduler.minimum-allocation-vcores</name>
+                <value>1</value>
+        </property>
+    
+        <property>
+                <name>yarn.scheduler.maximum-allocation-vcores</name>
+                <value>1</value>
+        </property>
+    
+        <property>
+                <name>yarn.nodemanager.vmem-check-enabled</name>
+                <value>false</value>
+        </property>
+        
+        <property>
+                <name>yarn.nodemanager.vmem-pmem-ratio</name>
+                <value>2.1</value>
+        </property>
+
 </configuration>
 
 
